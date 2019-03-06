@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    .inicio{
+        width: 0%;
+    }
+    .final{
+        width: 100%;
+    } 
+    .animacion{
+        transition: all 2s ease .5s; 
+    }
+    .menu-iconos{
+        width: 45px;
+    }
+    </style>
+
+  </head>
+  <body>
+      <div class="container text-center py-5"> 
+          <h1 id="titulo" class="display-3 py-5">Cambiando el texto</h1>
+          <h2 id="titulo2" class="display-4">Animacion de barra</h2>
+          <p>PRIMER COLOR</p>
+          <p>SEGUNDO COLOR</p>
+          <p>TERCER COLOR</p>
+          <div class="py-4">
+              <div class="progress">
+                  <div id="barra" class="progress-bar progress-bar-striped inicio animacion" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+          </div>
+          <button id="boton" class="btn btn-danger">Haz click y ve mi poder</button>
+      </div>
+
+    <script>
+        var nombre = "Juanse";
+        var Apellido = "Ferrari";
+    document.getElementById("titulo").innerHTML = nombre + " " + Apellido;
+    </script>
+
+    <script>
+        var x = 11;
+        if(x<12){
+            alert("buenos dias");
+        }
+    
+    
+    </script>
+
+    <div class="mt-5 menu-iconos">
+        <div class="bg-warning"><i class="fa fa-share-alt" aria-hidden="true"></i> </div>
+    </div>
+
+    <!-- <script> //queryselectorall estamos accediendo a todos los parrafos del documento HTML
+        var parrafos = document.querySelectorAll("p")
+        console.log(parrafos)
+        for(let cambio of parrafos){
+            cambio.classList.add("text-danger")
+        }        
+   
+    </script> -->
+
+
+
+
+
+
+    <!-- <script> //al hacer click se anima la barra
+        function animar(){
+             document.getElementById("barra").classList.toggle("final")
+
+         }
+         document.getElementById("boton").onclick = function(){
+             animar();
+         }
+
+    </script> -->
+
+    <!-- <script> // los array empiezan en nro 0(español)
+        var lenguajes = ["español", "ingles","portugues"];
+        lenguajes.push("frances"); //aparece al final del array(4)
+        lenguajes.unshift("aleman"); //aparece al principio (0)
+        document.getElementById("titulo").innerHTML = lenguajes.length;
+        console.log(lenguajes);
+    
+    </script> -->
+
+
+
+    <!-- <script> //Cambia el display del titulo
+        document.getElementById("titulo2").classList.add("bg-danger");
+        document.getElementById("titulo2").classList.remove("display-4");
+    
+    </script> -->
+    <!-- <script> //cambia el titulo con funciones
+        function suma(numero1, numero2){
+            return numero1 + numero2;
+            
+        }
+        var x = 8;
+        var y = 1;
+
+
+        document.getElementById("titulo").innerHTML = suma(x,y)
+
+    </script> -->
+<!-- 
+    <script> //Cambia el titulo al hacer click
+        function cambiar(){
+            document.getElementById("titulo").innerHTML = "Ajá te cambie";
+        }
+        document.getElementById("boton").onclick = function(){
+            cambiar();
+        }
+
+    </script> -->
+
+  
+    <!-- <script>alert("hola soy un mensaje externo")</script>    -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
